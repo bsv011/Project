@@ -36,6 +36,11 @@ header{
     margin: 0px 20px;
 }
 
+.nav ul li a{
+    /* text-decoration: none; */
+    color: white;
+}
+
  .nav .right .btn{
     font-size: 0.8rem;
     background-color: silver;
@@ -44,9 +49,6 @@ header{
     border-radius: 5px;
     
 }
-.nav .right .btn:hover{
-    cursor: pointer;
-  }
 
 .nav .right .btn2{
     font-size: 0.9rem;
@@ -58,9 +60,6 @@ header{
     border-radius: 5px;
     
 }
-.nav .right .btn2:hover{
-    cursor: pointer;
-  }
 
 .logo{
     position: absolute;
@@ -101,96 +100,33 @@ header{
     border-radius: 5px;
 }
 
-.info{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 35px;
-    line-height: 30px;
-    color: white;
-}
-
-.info h4{
-    font-size: 2.2rem;
-    font-family: serif;
-}
-.info p{
-    font-size: 18px;
-}
-span{
-    font-size: 26px;
-    font-style: italic;
-}
-
 /* Form Section */
-.container{
+.formBody{
     display: flex;
-    justify-content: space-around;
-    color: white;
-    line-height: 30px;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
 }
-
-.container .leftSide2{
-    padding: 50px;
-    width: 450px;
-    margin: 50px;
-    background-color: black;
-    border-radius: 10px;
-    color: white;
-    line-height: 50px;
-    padding: 1ch;
-}
-
-.container .rightSide2{
-    font-size: 2rem;
-    padding-top: 150px;
-    line-height: 50px;
-    font-family: serif;
-}
-
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select
-{
-    width: 70%;
-    padding: 8px;
-    background-color: silver;
-    border: 0.5px solid black;
-    border-radius: 3px;
-}
-
-
-input[type="submit"]{
-    width: 30%;
-    padding: 5px;
-    background-color: silver;
-    border: 1.5px;
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
     border-radius: 5px;
-    color: black;
-    cursor: pointer;
-    font-size: 15px;
 }
-
-input[type="submit"]:hover{
-    background-color: white;
-    color: black;
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
 }
-
- /* Footer styling */
- footer {
-    background-color: black;
-    color: white;
-    padding: 25px;
-    text-align: center;
-    font-size: 16px;
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-.SocialLogos{
-    margin-bottom: 10px;
+form .user-details .input-box{
+    width: calc(100%/ 2 - 20px);
 }
-.fa-square-instagram{font-size: 1.7rem; color: white;padding-right: 5px;}
-.fa-x-twitter{font-size: 1.7rem; color: white;padding-right: 5px;}
-.fa-linkedin{font-size: 1.7rem; color: white;padding-right: 5px;}
-.fa-facebook{font-size: 1.7rem; color: white;padding-right: 5px;}
-.fa-youtube{font-size: 1.7rem; color: white;padding-right: 5px;}
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
