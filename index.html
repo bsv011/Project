@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Platinum</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="icon" type="image/x-icon" href="Logo/4.png"> -->
+
+</head>
+
+<body>
+
+
+    <!-- Navbar Section -->
+    <header>
+
+        <div class="nav">
+            <img class="logo" src="Logo/8.png" alt="">
+            <div class="left">
+            </div>
+            <div class="right">
+                <ul>
+                    <li> <button class="btn2" onclick="myOnClickFn4()">Home</button></li>
+                    <li> <button class="btn2" onclick="myOnClickFn3()">Contact Us</button></li>
+                    <li> <button class="btn2" onclick="myOnClickFn2()">About Us</button></li>
+                    <li> <button class="btn" onclick="myOnClickFn()">LogIn/SignUp</button></li>
+                </ul>
+               
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Carousel Section -->
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="3000">
+                <div class="overlay-image" style="background-image: url(Imgs/Coming2.jpeg);"></div>
+                <div class="container">
+                    <!-- <h1>Example Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam illo, delectus, ducimus
+                        mollitia
+                        laudantium omnis harum voluptatem nesciunt debitis officiis odit explicabo dolor amet fuga?
+                    </p> -->
+                    <!-- <a href="#" class="btn btn-lg btn-primary">Sign Up Today</a> -->
+
+                </div>
+
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="overlay-image" style="background-image: url(Imgs/InPerson.jpg);"></div>
+                <div class="container">
+                    <!-- <h1>Example Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam illo, delectus, ducimus
+                        mollitia
+                        laudantium omnis harum voluptatem nesciunt debitis officiis odit explicabo dolor amet fuga?
+                    </p>
+                    <a href="#" class="btn btn-lg btn-primary">Sign Up Today</a> -->
+
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="overlay-image" style="background-image: url(Imgs/Hybrid.jpg);"></div>
+                <div class="container">
+                    <!-- <h1>Example Heading</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam illo, delectus, ducimus
+                        mollitia
+                        laudantium omnis harum voluptatem nesciunt debitis officiis odit explicabo dolor amet fuga?
+                    </p>
+                    <a href="#" class="btn btn-lg btn-primary">Sign Up Today</a> -->
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+
+    </div>
+
+    <!--TypeCast Section-->
+
+    <div class="animation">
+        <div class="textBox">
+            <hr class="top">
+            Welcome to <br> <span class="plat">PLANNING PLATINUM</span> <br>
+            <div>Where we help you</div>
+            <span id="element"></span> your Events!
+            <hr class="bottom">
+        </div>
+    </div>
+
+    <!--Events Section-->
+
+    <section class="EventSection">
+        <div class="headingLine">
+            What type of Event you are Planning?
+        </div>
+
+        <div class="outer">
+            <div class="box1">
+                <img src="Imgs/In_Person_1.jpg" alt="">
+                <h3>In Person Events</h3>
+                <p>
+                    <ul>
+                        <li>Venue Selection</li>
+                        <li>Logistics Management</li>
+                        <li>On-Site Coordination</li>
+                        <li>Catering Services</li>
+                    </ul>
+                    <button class="box1BTN" onclick="myRedirectFn()">Learn More</button>
+                </p>
+            </div>
+
+            <div class="box2">
+                <img src="Imgs/Virtual_1.jpg" alt="">
+                <h3>Virtual Events</h3>
+                <p>
+                    <ul>
+                        <li>Virtual Platform Selection</li>
+                        <li>Technical Support</li>
+                        <li>Interactive Features</li>
+                        <li>Speakers Management</li>
+                        <li>Branding and Customization</li>
+                    </ul>
+                    <button class="box2BTN" onclick="myRedirectFn2()">Learn More</button>
+                </p>
+            </div>
+
+            <div class="box3">
+                <img src="Imgs/Hybrid_1.jpg" alt="">
+                <h3>Hybrid Events</h3>
+                <p>
+                    <ul>
+                        <li>Dual Venue Management</li>
+                        <li>Hybrid Platform Integration</li>
+                        <li>Hybrid Audience Engagement</li>
+                        <li>Technical Integration</li>
+                        <li>Post-Event Analytics</li>
+                    </ul>
+                    <button class="box3BTN" onclick="myRedirectFn3()">Learn More</button>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Services Section-->
+
+    <section class="Services">
+        <div class="serviceContainer">
+            <div class="leftSide">
+                Do more, stress less <br>
+                All your event planning needs at one place!
+            </div>
+
+            <div class="rightSide">
+                With our comprehensive services, you can elevate your events without the hassle. From meticulous
+                planning to flawless execution.
+            </div>
+        </div>
+
+        <div class="serviceContainer2">
+            <div class="section1">
+                <div class="leftSide2">
+                    Plan, Customise, Personalise and 
+                    Manage your Events <br> to it's finest detail.
+                </div>
+
+                <div class="rightSide2">
+                    This is your all-in-one destination for effortless event planning. Say goodbye to the hassle of
+                    traditional event coordination - with our intuitive platform, you can plan, customize, manage, and
+                    execute your events seamlessly, all in one place. Experience the convenience of personalized event
+                    customization, streamlined venue selection, guest list management, and more, revolutionizing the way
+                    you plan and execute your events. Join us and discover the future of event planning, where every
+                    detail is meticulously curated to perfection.
+                </div>
+            </div>
+
+            <div class="section2">
+                <div class="leftSide3">
+                    <div style="color:  #FF6600;">End-to-end <br> event planning</div>
+                    <p style="line-height: 30px;">Embark on your event journey with confidence as our website offers end-to-end event planning solutions. From the initial brainstorming phase to the final toast of success, we guide you every step of the way.With seamless integration and personalized support, we ensure that your event planning experience is efficient, stress-free, and ultimately unforgettable.</p>
+
+                </div>
+
+                <div class="rightSide3">
+                    <video class="vid_1" src="Vids/EventPlanning.mp4" loop muted autoplay></video>
+                </div>
+            </div>
+
+            <div class="section3">
+                <div class="leftSide4">
+                    <video class="vid_1" src="Vids/HomePg.mp4" loop muted autoplay></video>
+               </div>
+
+               <div class="rightSide4">
+                    <div>Tailor-Made Moments: Customize Your Event Experience! </div>
+                    <p style="line-height: 30px;">We understand that every event is unique, and that's why we offer comprehensive customization options to suit your exact needs. With our intuitive platform, you have the power to personalize every aspect of your event, from the theme and decor to the catering and entertainment. Our user-friendly tools make it easy to bring your vision to life, ensuring that every detail reflects your company's brand and culture. Whether you're hosting a conference, seminar, or gala dinner, trust us to create a tailor-made event experience that leaves a lasting impression on your guests.</p>
+               </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Footer Section-->
+    <footer>
+        <div class="SocialLogos">
+            <a href="" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        
+        <p>&copy; 2024 Planning Platinum. All rights reserved.</p>
+        <p>Reach us at: info@planningplatinum.com | Phone: 123-456-7890</p>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Plan</i>', '<i>Orgainze</i>', '<i>Manage</i>', '<i>and Execute</i>'],
+            typeSpeed: 50,
+        }); 
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
